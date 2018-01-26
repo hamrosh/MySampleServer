@@ -30,12 +30,6 @@ app.use('/api/questions', questions);
 // assign a port to the express app
 const PORT = process.env.PORT || 5000;
 
-// set a default route /
-app.use('/', (req, res) => {
-  res.send('<h1>ITI GURUS Home</h1>');
-  console.log('server started');
-});
-
 // Express only serves static assets in production
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
