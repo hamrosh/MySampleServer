@@ -7,7 +7,6 @@ import FetchQuestion from './containers/fetchquestions';
 import QuestionDetails from './containers/question_detail';
 class App extends Component {
   render() {
-    console.log('test');
     return (
       <div>
         <FetchQuestion />

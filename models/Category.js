@@ -12,8 +12,7 @@ const CategorySchema = new Schema({
     required: true
   },
   user: {
-    type: String,
-    required: true
+    type: String
   },
   active: {
     type: Boolean,

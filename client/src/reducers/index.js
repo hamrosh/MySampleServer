@@ -2,12 +2,13 @@ import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 import FetchReducer from './reducer_fetchquestion';
 import GetQuestionsReducer from './reducer_getquestions';
-// import ActiveQuestion from './reducer_activequestion';
+import GetCategoriesReducer from './Category/index';
+
 const rootReducer = combineReducers({
   question: FetchReducer,
   allquestions: GetQuestionsReducer,
-  form: formReducer
-  // activeQuestion: ActiveQuestion
+  form: formReducer,
+  allcategories: GetCategoriesReducer
 });
 
 export default rootReducer;

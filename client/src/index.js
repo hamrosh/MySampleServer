@@ -12,6 +12,8 @@ import reducers from './reducers';
 import ReduxPromise from 'redux-promise';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import HeaderNavBar from './components/HeaderNavBar';
+import CategoryForm from './components/Category/CategoryForm';
+import AllCategories from './components/Category/AllCategories';
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 ReactDOM.render(
@@ -25,6 +27,8 @@ ReactDOM.render(
         <main role="main" class="container">
           <Switch>
             <Route path="/questions/new" component={AddQuestion} />
+            <Route path="/category/all" component={AllCategories} />
+            <Route path="/category/new" component={CategoryForm} />
             <Route path="/" component={QuestionList} />
           </Switch>
         </main>

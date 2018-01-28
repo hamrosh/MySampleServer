@@ -11,7 +11,7 @@ class QuestionList extends Component {
   renderQuestions() {
     return _.map(this.props.allqt, question => {
       return (
-        <li className="list-group-item" key="question._id">
+        <li className="list-group-item" key={question._id}>
           {question.Question}
         </li>
       );

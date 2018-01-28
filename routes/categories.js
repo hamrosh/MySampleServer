@@ -9,13 +9,16 @@ require('../models/Category');
 const Category = mongoose.model('categories');
 
 // get all the Categories
-router.get('/', (req, res) => {
-  Category.find({}, function(err, categories) {
-    if (err) {
-      return;
-    }
-    res.json(categories);
-  });
+router.get('/:page', (req, res) => {
+  var perPage = 5;
+  var page = req.params.page || 1;
+
+  Category.find({})
+    .skip(perPage * page - perPage)
+    .limit(perPage)
+    .exec(function(err, categories) {
+      res.json(categories);
+    });
 });
 
 // Select one Category
