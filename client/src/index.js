@@ -23,7 +23,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <HeaderNavBar />
-
+        {/* 
         <main role="main" class="container">
           <Switch>
             <Route path="/questions/new" component={AddQuestion} />
@@ -31,7 +31,7 @@ ReactDOM.render(
             <Route path="/category/new" component={CategoryForm} />
             <Route path="/" component={QuestionList} />
           </Switch>
-        </main>
+        </main> */}
       </div>
     </BrowserRouter>
   </Provider>,
