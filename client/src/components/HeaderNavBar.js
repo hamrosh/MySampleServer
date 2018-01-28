@@ -29,13 +29,7 @@ class HeaderNavBar extends Component {
 
             <li class="nav-item">
               <Link className="nav-link" to="/">
-                All Questions
-              </Link>
-            </li>
-
-            <li class="nav-item">
-              <Link className="nav-link" to="/questions/new">
-                Create new Question
+                Questions
               </Link>
             </li>
 

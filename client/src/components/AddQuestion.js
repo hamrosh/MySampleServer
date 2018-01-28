@@ -36,7 +36,7 @@ class AddQuestion extends Component {
         <Link to="/" style={{ marginLeft: 5 }} className="btn btn-danger">
           Cancel
         </Link>
-
+        {/* 
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputEmail4">Email</label>
@@ -102,7 +102,7 @@ class AddQuestion extends Component {
         </div>
         <button type="submit" class="btn btn-primary">
           Sign in
-        </button>
+        </button> */}
       </form>
     );
   }

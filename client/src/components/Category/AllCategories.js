@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
 import { allCategories, delCategory } from '../../actions/Category';
-
+import Image from './deleteimg.png';
 import { Link } from 'react-router-dom';
 
 class AllCategories extends Component {
@@ -22,7 +22,7 @@ class AllCategories extends Component {
       return (
         <li className="list-group-item" key={category._id}>
           {category.CategoryName}
-          {/* <img
+          <img
             className="float-right"
             onClick={() => {
               this.deleteCategory(category._id);
@@ -30,7 +30,7 @@ class AllCategories extends Component {
             src={Image}
             height="16px"
             width="auto"
-          /> */}
+          />
         </li>
       );
     });
